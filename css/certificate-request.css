@@ -1,0 +1,134 @@
+/* Typography
+------------------------------- */
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Thin.woff") format("woff"),
+         url("../fonts/Averta-Thin.otf") format("opentype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta.woff") format("woff"),
+         url("../fonts/Averta.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Averta";
+    src: url("../fonts/Averta-Semibold.woff") format("woff"),
+         url("../fonts/Averta-Semibold.otf") format("opentype");
+    font-weight: 600;
+}
+
+/* Custom Properties 
+------------------------------- */
+
+:root {
+    --primary-font: "Averta", sans-serif;
+    --primary-color: #514949;
+    --secondary-color: #E7332B;
+    --form-border-color: #0B0B0B;
+}
+
+/* Bootstrap Overrides
+------------------------------- */
+
+.btn {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 0;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    border-color: var(--secondary-color) !important;
+    background: var(--secondary-color) !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-control,
+.custom-select {
+    height: 55px;
+    padding-top: 14.5px;
+    padding-bottom: 14.5px;
+    border-radius: 0px;
+    border-color: var(--form-border-color);
+    border: 1px solid var(--form-border-color);
+}
+
+.custom-select {
+    background: #fff url(../images/certificate-request/select-dropdown-icon.svg) no-repeat right 18px center / 15px 10px;
+}
+
+.form-control::placeholder {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(102, 102, 102, 0.5);
+}
+
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* Global Styles
+------------------------------- */
+
+body {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Masthead
+------------------------------- */
+
+.masthead {
+    padding-bottom: 89px;
+}
+
+.page-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 14px;
+}
+
+/* Request Form
+------------------------------- */
+
+.form-section.container {
+    max-width: 878px;
+}
+
+.form-fieldset {
+    margin-bottom: 41px;
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    color: var(--secondary-color);
+}
+
+.tel-format {
+    max-width: 96px;
+    margin-right: 19px;
+    border-radius: 4px;
+}

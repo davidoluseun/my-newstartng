@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Startng Certificate Request</title>
+     <!-- Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha512-rO2SXEKBSICa/AfyhEK5ZqWFCOok1rcgPYfGOqtX35OyiraBg6Xa4NnBJwXgpIRoXeWjcAmcQniMhp22htDc6g==" crossorigin="anonymous" />       
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/certificate-request.css">
+</head>
+
+<!-- Page Content -->
+<body>
+    <main>
+        <!-- Masthead Section -->
+        <header class="masthead text-center">
+            <h1 class="page-title">Certificate Request</h1>
+            <p>Enter your details correctly to request for your certificate</p>
+        </header>
+
+        <!-- Form Section -->
+        <section class="form-section container">
+            <!-- Request Form -->
+            <form class="cert-request" name="cert-request" action="" method="post" autocomplete="off" novalidate>
+                <fieldset class="form-fieldset form-group">
+                    <legend class="form-title">Graduants Details</legend>
+
+                    <!-- First Name Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="firstname">First Name</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="firstname" type="text" name="firstname" placeholder="Enter first name" required>
+                            <div class="invalid-feedback" role="alert">This field is required, please enter your first name</div>
+                        </div>
+                    </div>
+
+                    <!-- Last Name Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="lastname">Last Name</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="lastname" type="text" name="lastname" placeholder="Enter last name" required>
+                            <div class="invalid-feedback" role="alert">This field is required, please enter your last name</div>
+                        </div>
+                    </div>
+
+                    <!-- Internship ID Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="intern-id">Internship ID</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="intern-id" type="text" name="intern-id" placeholder="Enter internship ID" required>
+                            <div class="invalid-feedback" role="alert">This field is required, please enter your internship ID</div>
+                        </div>
+                    </div>
+
+                    <!-- Track Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="track">Track</label>
+                        <div class="col-sm-9">
+                            <select class="custom-select" id="track" name="track" required>
+                                <option value="">Select track</option>
+                                <option value="ui/ux">UI/UX Design</option>
+                                <option value="frontend">Front End Development</option>
+                                <option value="backend">Back End Development</option>
+                                <option value="mobile">Mobile Development</option>
+                            </select>
+                            <div class="invalid-feedback" role="alert">This field is required, please select your track</div>
+                        </div>
+                    </div>
+
+                    <!-- Year of Completion Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="yoc">Year of Completion</label>
+                        <div class="col-sm-9">
+                            <select class="custom-select" id="yoc" name="yoc" required>
+                                <option value="">Select year</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                            </select>
+                            <div class="invalid-feedback" role="alert">This field is required, please select year of completion</div>
+                        </div>
+                    </div>
+
+                    <!-- Email Address Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="intern-email">Email Address</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="intern-email" type="email" name="intern-email" placeholder="Enter your email address" required>
+                            <div class="invalid-feedback" role="alert">This field is required, please enter your email address</div>
+                        </div>
+                    </div>
+
+                    <!-- Phone Number Field -->
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label align-self-center" for="tel-format">Phone No</label>
+                        <div class="col-sm-9">
+                            <div class="d-flex">
+                                <select class="tel-format custom-select" id="tel-format" name="tel-format">
+                                    <option value="+234">+234</option>
+                                    <option value="+233">+233</option>
+                                    <option value="+254">+254</option>
+                                    <option value="+237">+237</option>
+                                    <option value="+1">+1</option>
+                                    <option value="+7">+7</option>
+                                    <option value="+44">+44</option>
+                                    <option value="+91">+91</option>
+                                </select>
+                                <input class="form-control" type="tel" name="phone-number" placeholder="Enter your phone number">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <div class="d-flex justify-content-end">
+                    <input class="btn btn-primary" type="submit" value="Request Certificate">
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <!-- jQuery JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha512-I5TkutApDjnWuX+smLIPZNhw+LhTd8WrQhdCKsxCFRSvhFx2km8ZfEpNIhF9nq04msHhOkE8BMOBj5QE07yhMA==" crossorigin="anonymous"></script>  
+    <!-- Custom JS -->
+    <script src="js/certificate-request.js"></script>
+</body>
+</html>

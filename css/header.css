@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url("/fonts/Averta.woff");
+    font-style: normal;
+}
+
+header {
+    background: rgba(242, 235, 233, 0.6);
+    font-family: myfont;
+    transition: all 0.5s;
+}
+
+header .h-btn {
+    background: #E7332B;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 1000px ) {
+    header .h-btn {
+        margin-left: 130px;
+    }
+}
