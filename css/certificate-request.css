@@ -146,3 +146,51 @@ header {
     margin-right: 19px;
     border-radius: 4px;
 }
+
+/* Request Form
+------------------------------- */
+
+footer {
+    margin-top: 121px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+footer h4,
+.copyright {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+footer h4 {
+    margin-bottom: 24px;
+}
+
+footer .nav-link {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: var(--primary-color);
+}
+
+
+footer .nav-link:hover {
+    text-decoration: underline;
+}
+
+.facebook-link {
+    color: #3b5998;
+    font-size: 20px;
+}
+
+.twitter-link {
+    color: #00acee;
+    font-size: 20px;
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 56px;
+    padding: 32px 0 46px;
+    border-top: 0.7px solid #514949;
+}
